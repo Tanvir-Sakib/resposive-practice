@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: lightblue;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    background-color: royalblue;
+    height: 100px;
+}
+.head{
+    width: 900px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+.idea{
+    display: flex;
+    color: white;
+    align-items: center;
+    width: 50%;
+    float: left;
+}    
+.icone{
+    font-size: 50px;
+    margin-right: 10px;
+}
+
+.nev{
+    width: 50%;
+    float: right;
+    margin-top: 22px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;  
+}  
+li {
+    float: right;
+}
+li a {
+    text-decoration: none;
+    /* display: block; */
+    padding: 8px;
+    color: white;
+    font-size: 25px;
+}
+li a:hover{
+    background-color: #ddd;
+    color:royalblue;
+}
+li img{
+    height: 50px;
+
+}
+main{
+    width: 900px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+section{
+    background-color: white;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 10px;
+}
+.section-title{
+    color: royalblue;
+}
+.top-players, .blogs, .courses{
+    display: grid;
+    grid-gap:30px;
+    margin-top: 20px;
+    place-items: center;
+}
+.top-players, .courses{
+    grid-template-columns: repeat(3, 1fr);
+}
+.blogs{
+    grid-template-columns: repeat(2, 1fr);
+}
+.player, .blog{
+    display: flex;
+    align-items: center;
+}
+.player img{
+    height: 50px;
+    margin-right: 20px;
+}
+.thumbnail img{
+    width: 200px;
+    margin-right: 20px;
+}
+.filled{
+    color:goldenrod;
+    font-size: 0.8em;
+}
+.unfilled{
+    color: lightgray;
+    font-size: 0.8em;
+}
+.course img{
+    width: 200px;
+    height: 95px;
+}
+.course-info{
+    display: flex;
+}
+.ratings{
+    margin-right: 12px;
+}
+.duration{
+    background-color: rgb(248, 227, 227);
+    border: rgb(248, 227, 227);
+    color: rgb(236, 77, 77);
+    border-radius: 10px;
+    padding:0px 15px
+}
+p a{
+    text-decoration: none;
+    color: red;
+}
+
+@media (max-width:992px){
+    .top-players, .courses{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+@media (max-width:668px){
+    .top-players, .courses{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blog{
+        display: block;
+    }
+    header{
+        height: 150px;
+    }
+    .idea ,.nev{
+        width: 100%;
+    }
+    .nev{
+        float: left;
+    }
+}    
