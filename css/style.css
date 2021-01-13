@@ -90,6 +90,9 @@ section{
     height: 50px;
     margin-right: 20px;
 }
+#pic{
+    
+}
 .thumbnail img{
     width: 200px;
     margin-right: 20px;
@@ -132,6 +135,14 @@ p a{
         grid-template-columns: repeat(1, 1fr);
     }
 
+}
+@media (max-width:716px){
+    .idea{
+        width: 30%;
+    }
+    .nev{
+        width: 70%;
+    }
 }
 @media (max-width:668px){
     .top-players, .courses{
